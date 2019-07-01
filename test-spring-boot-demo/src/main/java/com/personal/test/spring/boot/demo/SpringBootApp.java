@@ -1,5 +1,6 @@
 package com.personal.test.spring.boot.demo;
 
+import com.personal.test.spring.boot.demo.annoation.EnableMyAnnoation;
 import com.personal.test.spring.boot.demo.listener.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -14,6 +15,8 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
  * @Version 1.0
  **/
 @SpringBootApplication
+@EnableAutoConfiguration
+@EnableMyAnnoation
 public class SpringBootApp {
     public static void main(String[] args) {
         SpringApplication app = new SpringApplication(SpringBootApp.class);

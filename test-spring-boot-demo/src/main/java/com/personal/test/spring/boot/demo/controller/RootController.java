@@ -12,12 +12,14 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 @RestController
 public class RootController {
+
     @RequestMapping("hello")
     public String sayHello(){
         return "hello";
     }
-
+    @RequestMapping("bye")
     public String sayBye(){
         return "bye";
     }
+
 }
