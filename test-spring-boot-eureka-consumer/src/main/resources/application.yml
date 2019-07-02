@@ -1,0 +1,11 @@
+eureka:
+  client:
+    serviceUrl: #注册中心的注册地址
+      defaultZone: http://localhost:9001/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+server:
+  port: 9003  #服务端口号
+spring:
+  application:
+    name: service-consumer #服务名称--调用的时候根据名称来调用该服务的方法
