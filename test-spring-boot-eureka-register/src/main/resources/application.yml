@@ -1,0 +1,11 @@
+server:
+  port: 9001
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+  client:
+    register-with-eureka: false #不作为服务注册
+    fetch-registry: false #单点服务不需要同步其他服务数据
+    service-url:
+      defaultZone: http://localhost:9001/eureka/ #服务注册地址
